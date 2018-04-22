@@ -1,4 +1,4 @@
 package com.viscum;
 
-public class branch1 {
+public interface branch1 {
 }
