@@ -2,6 +2,8 @@ package com.viscum.utils;
 
 import com.viscum.exception.WxException;
 import net.sf.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;
@@ -16,7 +18,7 @@ import java.util.*;
 
 public class HttpCilentUtil {
 
-//	private Logger logger = Logger.getLogger(HttpCilentUtil.class.);
+	private Logger logger = LoggerFactory.getLogger(HttpCilentUtil.class);
 
 	public static JSONObject callPost(String url, String token, JSONObject postData) throws Exception {
 		if (token != null) {
